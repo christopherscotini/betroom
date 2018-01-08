@@ -1,0 +1,11 @@
+# Informação da aplicação
+info:
+  component: 'API de Consulta de Jogos'
+  build:
+    version: '@project.version@'
+    name: '@project.name@'
+    
+server:
+  context-path: /betroom
+logging:
+  config: classpath:log4j2-dev.xml
