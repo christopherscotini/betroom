@@ -5,7 +5,7 @@
 
 	<groupId>com.gamaset</groupId>
 	<artifactId>betroom</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
 	<name>betroom</name>
@@ -34,6 +34,16 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
+		<dependency>
+			<groupId>redis.clients</groupId>
+			<artifactId>jedis</artifactId>
+		</dependency>
 
 		<!-- Dependencies for [javareusable:apache-commons] -->
 		<dependency>
@@ -41,7 +51,7 @@
 			<artifactId>commons-lang3</artifactId>
 			<version>3.5</version>
 		</dependency>
-		
+
 		<!-- Dependencies for [log:log4j2] -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -57,7 +67,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-log4j2</artifactId>
 		</dependency>
-		
+
 		<!-- Dependencies for [tests] -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -67,10 +77,15 @@
 	</dependencies>
 
 	<build>
+		<finalName>betroom</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>

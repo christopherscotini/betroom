@@ -69,10 +69,7 @@ public class LogConstants {
 	public class PARAMETERS {
 		public static final String START_DATE = "startDate";
 		public static final String END_DATE = "endDate";
-		public static final String PERIOD = "period";
-		public static final String ONLY_BOOKS = "onlyBooks";
-		public static final String TOTAL_PRODUCTS = "totalOfProducts";
-		public static final String PRODUCT_ID = "productId";
+		public static final String MATCH_ID = "matchId";
 
 		private PARAMETERS() {
 		}

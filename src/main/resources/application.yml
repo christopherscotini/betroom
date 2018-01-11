@@ -4,7 +4,17 @@ info:
   build:
     version: '@project.version@'
     name: '@project.name@'
-    
+spring:
+  profiles: default
+  application:
+    name: betroom
+  redis:
+    host: redis-10175.c15.us-east-1-2.ec2.cloud.redislabs.com
+    port: 10175
+    password: KIz8xTMzeotUsOWV
+cache:
+  hit-wait: 5
+  defaultExpiration: 60
 server:
   context-path: /betroom
 logging:
