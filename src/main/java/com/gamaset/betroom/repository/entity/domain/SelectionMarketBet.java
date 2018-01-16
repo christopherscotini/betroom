@@ -18,7 +18,8 @@ import org.apache.commons.lang3.builder.ToStringStyle;
  * 
  * @since 1.0.0
  * @author Christopher Rozario  (ˇ෴ˇ)
- * @date 2018-01-15
+ * CREATE, TEST, COMPILE AND RUN.
+ * @date 2018-jan-16
  */
 @Entity
 @Table(name = "selection_market_bet")

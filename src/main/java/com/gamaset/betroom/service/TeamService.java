@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.gamaset.betroom.cache.component.CacheKeeper;
-import com.gamaset.betroom.repository.TeamRepository;
+import com.gamaset.betroom.repository.domain.TeamRepository;
 import com.gamaset.betroom.repository.entity.domain.Team;
 
 /**
@@ -25,11 +25,11 @@ public class TeamService {
 	private TeamRepository teamRepository;
 
 	public Team findOne(Long teamId) {
-		return teamRepository.findById(teamId);
+		return teamRepository.findOne(teamId);
 	}
 
 	public List<Team> list() {
-		return teamRepository.findAll();
+		return (List<Team>) teamRepository.findAll();
 	}
 
 }

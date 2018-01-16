@@ -33,7 +33,7 @@ public class Competition {
 	private String url;
 	
 	@ManyToOne
-	@JoinColumn(name = "FLAG_CD_ID_FK")
+	@JoinColumn(name = "IMAG_CD_ID_FK")
 	private Image flag;
 	
 	@ManyToOne
