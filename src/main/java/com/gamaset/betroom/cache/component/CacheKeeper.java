@@ -1,8 +1,8 @@
 package com.gamaset.betroom.cache.component;
 
 import static com.gamaset.betroom.infra.constants.ExceptionConstants.FAIL_TO_PROCESS_PUT_MATCH;
-import static com.gamaset.betroom.infra.constants.ValidationConstants.MATCH_MUST_NOT_BE_NULL;
 import static com.gamaset.betroom.infra.constants.ValidationConstants.MATCH_ID_MUST_NOT_BE_NULL;
+import static com.gamaset.betroom.infra.constants.ValidationConstants.MATCH_MUST_NOT_BE_NULL;
 import static org.springframework.util.Assert.notNull;
 
 import org.springframework.beans.factory.annotation.Autowired;

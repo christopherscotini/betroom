@@ -70,6 +70,7 @@ public class LogConstants {
 		public static final String START_DATE = "startDate";
 		public static final String END_DATE = "endDate";
 		public static final String MATCH_ID = "matchId";
+		public static final String TEAM_ID = "teamId";
 
 		private PARAMETERS() {
 		}
