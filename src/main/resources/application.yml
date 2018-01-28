@@ -23,7 +23,5 @@ spring:
 cache:
   hit-wait: 5
   defaultExpiration: 60
-server:
-  context-path: /betroom
 logging:
   config: classpath:log4j2-dev.xml
